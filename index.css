@@ -1,0 +1,27 @@
+html,
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+section
+{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    perspective: 10px;
+}
+
+article
+{
+    transform: rotateY(40deg);
+}
+
+img
+{
+    width: 100%;
+}
