@@ -9,6 +9,7 @@ section
 img
 {
     width: 200%;
+    margin: 0 0 0 -50%;
 }
 
 section
@@ -19,302 +20,353 @@ section
     align-items: center;
 }
 
+label.recipe
+{
+    pointer-events: none;
+    display:inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
 article
 {
     transition-duration: .5s;
     flex-basis: 100%;
 }
 
-input.a1:checked ~ article:nth-of-type(1)
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+input.a1:checked ~ article.a1
 {
     z-index: 7;
     transform: translateX(300%);
 }
 
-input.a1:checked ~ article:nth-of-type(2)
+input.a1:checked ~ article.a2
 {
     z-index: 6;
-    transform: translateX(300%) perspective(20em) rotateY(-60deg);
+    transform: translateX(300%) perspective(20em) rotateY(-40deg);
 }
 
-input.a1:checked ~ article:nth-of-type(3)
+input.a1:checked ~ article.a3
 {
     z-index: 5;
-    transform: translateX(300%) perspective(30em) rotateY(-60deg);
+    transform: translateX(300%) perspective(30em) rotateY(-40deg);
 }
 
-input.a1:checked ~ article:nth-of-type(4)
+input.a1:checked ~ article.a4
 {
     z-index: 4;
-    transform: translateX(300%) perspective(40em) rotateY(-60deg);
+    transform: translateX(300%) perspective(40em) rotateY(-40deg);
 }
 
-input.a1:checked ~ article:nth-of-type(5)
+input.a1:checked ~ article.a5
 {
     z-index: 3;
-    transform: translateX(300%) perspective(50em) rotateY(-60deg);
+    transform: translateX(300%) perspective(50em) rotateY(-40deg);
 }
 
-input.a1:checked ~ article:nth-of-type(6)
+input.a1:checked ~ article.a6
 {
     z-index: 2;
-    transform: translateX(300%) perspective(60em) rotateY(-60deg);
+    transform: translateX(300%) perspective(60em) rotateY(-40deg);
 }
 
-input.a1:checked ~ article:nth-of-type(7)
+input.a1:checked ~ article.a7
 {
     z-index: 1;
-    transform: translateX(300%) perspective(70em) rotateY(-60deg);
+    transform: translateX(300%) perspective(70em) rotateY(-40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(1)
+input.a2:checked ~ article.a1
 {
     z-index: 6;
-    transform: translateX(200%) perspective(20em) rotateY(60deg);
+    transform: translateX(200%) perspective(20em) rotateY(40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(2)
+input.a2:checked ~ article.a2
 {
     z-index: 7;
     transform: translateX(200%);
 }
 
-input.a2:checked ~ article:nth-of-type(3)
+input.a2:checked ~ article.a3
 {
     z-index: 6;
-    transform: translateX(200%) perspective(20em) rotateY(-60deg);
+    transform: translateX(200%) perspective(20em) rotateY(-40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(4)
+input.a2:checked ~ article.a4
 {
     z-index: 5;
-    transform: translateX(200%) perspective(30em) rotateY(-60deg);
+    transform: translateX(200%) perspective(30em) rotateY(-40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(5)
+input.a2:checked ~ article.a5
 {
     z-index: 4;
-    transform: translateX(200%) perspective(40em) rotateY(-60deg);
+    transform: translateX(200%) perspective(40em) rotateY(-40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(6)
+input.a2:checked ~ article.a6
 {
     z-index: 3;
-    transform: translateX(200%) perspective(50em) rotateY(-60deg);
+    transform: translateX(200%) perspective(50em) rotateY(-40deg);
 }
 
-input.a2:checked ~ article:nth-of-type(7)
+input.a2:checked ~ article.a7
 {
     z-index: 2;
-    transform: translateX(200%) perspective(60em) rotateY(-60deg);
+    transform: translateX(200%) perspective(60em) rotateY(-40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(1)
+input.a3:checked ~ article.a1
 {
     z-index: 5;
-    transform: translateX(100%) perspective(30em) rotateY(60deg);
+    transform: translateX(100%) perspective(30em) rotateY(40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(2)
+input.a3:checked ~ article.a2
 {
     z-index: 6;
-    transform: translateX(100%) perspective(30em) rotateY(60deg);
+    transform: translateX(100%) perspective(30em) rotateY(40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(3)
+input.a3:checked ~ article.a3
 {
     z-index: 7;
     transform: translateX(100%);
 }
 
-input.a3:checked ~ article:nth-of-type(4)
+input.a3:checked ~ article.a4
 {
     z-index: 6;
-    transform: translateX(100%) perspective(20em) rotateY(-60deg);
+    transform: translateX(100%) perspective(20em) rotateY(-40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(5)
+input.a3:checked ~ article.a5
 {
     z-index: 5;
-    transform: translateX(100%) perspective(30em) rotateY(-60deg);
+    transform: translateX(100%) perspective(30em) rotateY(-40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(6)
+input.a3:checked ~ article.a6
 {
     z-index: 4;
-    transform: translateX(100%) perspective(40em) rotateY(-60deg);
+    transform: translateX(100%) perspective(40em) rotateY(-40deg);
 }
 
-input.a3:checked ~ article:nth-of-type(7)
+input.a3:checked ~ article.a7
 {
     z-index: 3;
-    transform: translateX(100%) perspective(50em) rotateY(-60deg);
+    transform: translateX(100%) perspective(50em) rotateY(-40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(1)
+input.a4:checked ~ article.a1
 {
     z-index: 4;
-    transform: perspective(50em) rotateY(60deg);
+    transform: perspective(50em) rotateY(40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(2)
+input.a4:checked ~ article.a2
 {
     z-index: 5;
-    transform: perspective(40em) rotateY(60deg);
+    transform: perspective(40em) rotateY(40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(3)
+input.a4:checked ~ article.a3
 {
     z-index: 6;
-    transform: perspective(30em) rotateY(60deg);
+    transform: perspective(30em) rotateY(40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(4)
+input.a4:checked ~ article.a4
 {
     z-index: 7;
     transform: perspective(20em);
 }
 
-input.a4:checked ~ article:nth-of-type(5)
+input.a4:checked ~ article.a5
 {
     z-index: 6;
-    transform: perspective(30em) rotateY(-60deg);
+    transform: perspective(30em) rotateY(-40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(6)
+input.a4:checked ~ article.a6
 {
     z-index: 5;
-    transform: perspective(40em) rotateY(-60deg);
+    transform: perspective(40em) rotateY(-40deg);
 }
 
-input.a4:checked ~ article:nth-of-type(7)
+input.a4:checked ~ article.a7
 {
     z-index: 4;
-    transform: perspective(50em) rotateY(-60deg);
+    transform: perspective(50em) rotateY(-40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(1)
+input.a5:checked ~ article.a1
 {
     z-index: 3;
-    transform: translateX(-100%) perspective(50em) rotateY(60deg);
+    transform: translateX(-100%) perspective(50em) rotateY(40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(2)
+input.a5:checked ~ article.a2
 {
     z-index: 4;
-    transform: translateX(-100%) perspective(40em) rotateY(60deg);
+    transform: translateX(-100%) perspective(40em) rotateY(40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(3)
+input.a5:checked ~ article.a3
 {
     z-index: 5;
-    transform: translateX(-100%) perspective(30em) rotateY(60deg);
+    transform: translateX(-100%) perspective(30em) rotateY(40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(4)
+input.a5:checked ~ article.a4
 {
     z-index: 6;
-    transform: translateX(-100%) perspective(20em) rotateY(60deg);
+    transform: translateX(-100%) perspective(20em) rotateY(40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(5)
+input.a5:checked ~ article.a5
 {
     z-index: 7;
     transform: translateX(-100%);
 }
 
-input.a5:checked ~ article:nth-of-type(6)
+input.a5:checked ~ article.a6
 {
     z-index: 6;
-    transform: translateX(-100%) perspective(20em) rotateY(-60deg);
+    transform: translateX(-100%) perspective(20em) rotateY(-40deg);
 }
 
-input.a5:checked ~ article:nth-of-type(7)
+input.a5:checked ~ article.a7
 {
     z-index: 5;
-    transform: translateX(-100%) perspective(30em) rotateY(-60deg);
+    transform: translateX(-100%) perspective(30em) rotateY(-40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(1)
+input.a6:checked ~ article.a1
 {
     z-index: 2;
-    transform: translateX(-200%) perspective(60em) rotateY(60deg);
+    transform: translateX(-200%) perspective(60em) rotateY(40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(2)
+input.a6:checked ~ article.a2
 {
     z-index: 3;
-    transform: translateX(-200%) perspective(50em) rotateY(60deg);
+    transform: translateX(-200%) perspective(50em) rotateY(40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(3)
+input.a6:checked ~ article.a3
 {
     z-index: 4;
-    transform: translateX(-200%) perspective(40em) rotateY(60deg);
+    transform: translateX(-200%) perspective(40em) rotateY(40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(4)
+input.a6:checked ~ article.a4
 {
     z-index: 5;
-    transform: translateX(-200%) perspective(30em) rotateY(60deg);
+    transform: translateX(-200%) perspective(30em) rotateY(40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(5)
+input.a6:checked ~ article.a5
 {
     z-index: 6;
-    transform: translateX(-200%) perspective(20em) rotateY(60deg);
+    transform: translateX(-200%) perspective(20em) rotateY(40deg);
 }
 
-input.a6:checked ~ article:nth-of-type(6)
+input.a6:checked ~ article.a6
 {
     z-index: 7;
     transform: translateX(-200%);
 }
 
-input.a6:checked ~ article:nth-of-type(7)
+input.a6:checked ~ article.a7
 {
     z-index: 6;
-    transform: translateX(-200%) perspective(20em) rotateY(-60deg);
+    transform: translateX(-200%) perspective(20em) rotateY(-40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(1)
+input.a7:checked ~ article.a1
 {
     z-index: 1;
-    transform: translateX(-300%) perspective(70em) rotateY(60deg);
+    transform: translateX(-300%) perspective(70em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(2)
+input.a7:checked ~ article.a2
 {
     z-index: 2;
-    transform: translateX(-300%) perspective(60em) rotateY(60deg);
+    transform: translateX(-300%) perspective(60em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(3)
+input.a7:checked ~ article.a3
 {
     z-index: 3;
-    transform: translateX(-300%) perspective(50em) rotateY(60deg);
+    transform: translateX(-300%) perspective(50em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(4)
+input.a7:checked ~ article.a4
 {
     z-index: 4;
-    transform: translateX(-300%) perspective(40em) rotateY(60deg);
+    transform: translateX(-300%) perspective(40em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(5)
+input.a7:checked ~ article.a5
 {
     z-index: 5;
-    transform: translateX(-300%) perspective(30em) rotateY(60deg);
+    transform: translateX(-300%) perspective(30em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(6)
+input.a7:checked ~ article.a6
 {
     z-index: 6;
-    transform: translateX(-300%) perspective(20em) rotateY(60deg);
+    transform: translateX(-300%) perspective(20em) rotateY(40deg);
 }
 
-input.a7:checked ~ article:nth-of-type(7)
+input.a7:checked ~ article.a7
 {
     z-index: 7;
     transform: translateX(-300%);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+input.a4:checked ~ article.a4:hover label.recipe
+{
+    animation: label-activation 2s, label-active 1s infinite;
+}
+
+@keyframes label-active {
+    from {
+        pointer-events: auto;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    to {
+        pointer-events: auto;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+}
+
+@keyframes label-activation {
+    from {
+        background-color: white;
+        width: 0;
+        color: black;
+    }
+    to {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+}
+
+input.recipe:checked ~ article
+{
+    background-color: black;
 }
