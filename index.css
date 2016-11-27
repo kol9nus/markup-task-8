@@ -13,12 +13,76 @@ section
     display: flex;
     align-items: center;
     margin: auto;
-    perspective: 10px;
 }
 
 article
 {
-    transform: rotateY(40deg);
+    margin: 0 -5%;
+    transition-duration: .5s;
+}
+
+article:nth-of-type(1)
+{
+    transform: perspective(40em) rotateY(40deg);
+}
+
+article:nth-of-type(2)
+{
+    transform: perspective(30em) rotateY(40deg);
+}
+
+article:nth-of-type(3)
+{
+    transform: perspective(20em) rotateY(40deg);
+}
+
+article:nth-of-type(4)
+{
+    z-index: 4;
+}
+
+article:nth-of-type(5)
+{
+    transform: perspective(20em) rotateY(-40deg);
+}
+
+article:nth-of-type(6)
+{
+    transform: perspective(30em) rotateY(-40deg);
+}
+
+article:nth-of-type(7)
+{
+    transform: perspective(40em) rotateY(-40deg);
+}
+
+article:nth-of-type(1),
+article:nth-of-type(7)
+{
+    z-index: 1;
+}
+
+article:nth-of-type(2),
+article:nth-of-type(6)
+{
+    z-index: 2;
+}
+
+article:nth-of-type(3),
+article:nth-of-type(5)
+{
+    z-index: 3;
+}
+
+article:hover
+{
+    transform: perspective(0);
+    z-index: 5;
+}
+
+article:nth-of-type(1):hover ~ article:nth-of-type(n + 1)
+{
+    transform: perspective(40em) rotateY(-40deg);
 }
 
 img
