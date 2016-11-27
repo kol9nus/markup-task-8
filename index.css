@@ -1,91 +1,320 @@
 html,
-body
-{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
+body,
 section
 {
     height: 100%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-article
-{
-    margin: 0 -5%;
-    transition-duration: .5s;
-}
-
-article:nth-of-type(1)
-{
-    transform: perspective(40em) rotateY(40deg);
-}
-
-article:nth-of-type(2)
-{
-    transform: perspective(30em) rotateY(40deg);
-}
-
-article:nth-of-type(3)
-{
-    transform: perspective(20em) rotateY(40deg);
-}
-
-article:nth-of-type(4)
-{
-    z-index: 4;
-}
-
-article:nth-of-type(5)
-{
-    transform: perspective(20em) rotateY(-40deg);
-}
-
-article:nth-of-type(6)
-{
-    transform: perspective(30em) rotateY(-40deg);
-}
-
-article:nth-of-type(7)
-{
-    transform: perspective(40em) rotateY(-40deg);
-}
-
-article:nth-of-type(1),
-article:nth-of-type(7)
-{
-    z-index: 1;
-}
-
-article:nth-of-type(2),
-article:nth-of-type(6)
-{
-    z-index: 2;
-}
-
-article:nth-of-type(3),
-article:nth-of-type(5)
-{
-    z-index: 3;
-}
-
-article:hover
-{
-    transform: perspective(0);
-    z-index: 5;
-}
-
-article:nth-of-type(1):hover ~ article:nth-of-type(n + 1)
-{
-    transform: perspective(40em) rotateY(-40deg);
+    margin: 0;
 }
 
 img
 {
-    width: 100%;
+    width: 200%;
+}
+
+section
+{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+article
+{
+    transition-duration: .5s;
+    flex-basis: 100%;
+}
+
+input.a1:checked ~ article:nth-of-type(1)
+{
+    z-index: 7;
+    transform: translateX(300%);
+}
+
+input.a1:checked ~ article:nth-of-type(2)
+{
+    z-index: 6;
+    transform: translateX(300%) perspective(20em) rotateY(-60deg);
+}
+
+input.a1:checked ~ article:nth-of-type(3)
+{
+    z-index: 5;
+    transform: translateX(300%) perspective(30em) rotateY(-60deg);
+}
+
+input.a1:checked ~ article:nth-of-type(4)
+{
+    z-index: 4;
+    transform: translateX(300%) perspective(40em) rotateY(-60deg);
+}
+
+input.a1:checked ~ article:nth-of-type(5)
+{
+    z-index: 3;
+    transform: translateX(300%) perspective(50em) rotateY(-60deg);
+}
+
+input.a1:checked ~ article:nth-of-type(6)
+{
+    z-index: 2;
+    transform: translateX(300%) perspective(60em) rotateY(-60deg);
+}
+
+input.a1:checked ~ article:nth-of-type(7)
+{
+    z-index: 1;
+    transform: translateX(300%) perspective(70em) rotateY(-60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(1)
+{
+    z-index: 6;
+    transform: translateX(200%) perspective(20em) rotateY(60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(2)
+{
+    z-index: 7;
+    transform: translateX(200%);
+}
+
+input.a2:checked ~ article:nth-of-type(3)
+{
+    z-index: 6;
+    transform: translateX(200%) perspective(20em) rotateY(-60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(4)
+{
+    z-index: 5;
+    transform: translateX(200%) perspective(30em) rotateY(-60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(5)
+{
+    z-index: 4;
+    transform: translateX(200%) perspective(40em) rotateY(-60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(6)
+{
+    z-index: 3;
+    transform: translateX(200%) perspective(50em) rotateY(-60deg);
+}
+
+input.a2:checked ~ article:nth-of-type(7)
+{
+    z-index: 2;
+    transform: translateX(200%) perspective(60em) rotateY(-60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(1)
+{
+    z-index: 5;
+    transform: translateX(100%) perspective(30em) rotateY(60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(2)
+{
+    z-index: 6;
+    transform: translateX(100%) perspective(30em) rotateY(60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(3)
+{
+    z-index: 7;
+    transform: translateX(100%);
+}
+
+input.a3:checked ~ article:nth-of-type(4)
+{
+    z-index: 6;
+    transform: translateX(100%) perspective(20em) rotateY(-60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(5)
+{
+    z-index: 5;
+    transform: translateX(100%) perspective(30em) rotateY(-60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(6)
+{
+    z-index: 4;
+    transform: translateX(100%) perspective(40em) rotateY(-60deg);
+}
+
+input.a3:checked ~ article:nth-of-type(7)
+{
+    z-index: 3;
+    transform: translateX(100%) perspective(50em) rotateY(-60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(1)
+{
+    z-index: 4;
+    transform: perspective(50em) rotateY(60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(2)
+{
+    z-index: 5;
+    transform: perspective(40em) rotateY(60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(3)
+{
+    z-index: 6;
+    transform: perspective(30em) rotateY(60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(4)
+{
+    z-index: 7;
+    transform: perspective(20em);
+}
+
+input.a4:checked ~ article:nth-of-type(5)
+{
+    z-index: 6;
+    transform: perspective(30em) rotateY(-60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(6)
+{
+    z-index: 5;
+    transform: perspective(40em) rotateY(-60deg);
+}
+
+input.a4:checked ~ article:nth-of-type(7)
+{
+    z-index: 4;
+    transform: perspective(50em) rotateY(-60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(1)
+{
+    z-index: 3;
+    transform: translateX(-100%) perspective(50em) rotateY(60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(2)
+{
+    z-index: 4;
+    transform: translateX(-100%) perspective(40em) rotateY(60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(3)
+{
+    z-index: 5;
+    transform: translateX(-100%) perspective(30em) rotateY(60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(4)
+{
+    z-index: 6;
+    transform: translateX(-100%) perspective(20em) rotateY(60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(5)
+{
+    z-index: 7;
+    transform: translateX(-100%);
+}
+
+input.a5:checked ~ article:nth-of-type(6)
+{
+    z-index: 6;
+    transform: translateX(-100%) perspective(20em) rotateY(-60deg);
+}
+
+input.a5:checked ~ article:nth-of-type(7)
+{
+    z-index: 5;
+    transform: translateX(-100%) perspective(30em) rotateY(-60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(1)
+{
+    z-index: 2;
+    transform: translateX(-200%) perspective(60em) rotateY(60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(2)
+{
+    z-index: 3;
+    transform: translateX(-200%) perspective(50em) rotateY(60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(3)
+{
+    z-index: 4;
+    transform: translateX(-200%) perspective(40em) rotateY(60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(4)
+{
+    z-index: 5;
+    transform: translateX(-200%) perspective(30em) rotateY(60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(5)
+{
+    z-index: 6;
+    transform: translateX(-200%) perspective(20em) rotateY(60deg);
+}
+
+input.a6:checked ~ article:nth-of-type(6)
+{
+    z-index: 7;
+    transform: translateX(-200%);
+}
+
+input.a6:checked ~ article:nth-of-type(7)
+{
+    z-index: 6;
+    transform: translateX(-200%) perspective(20em) rotateY(-60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(1)
+{
+    z-index: 1;
+    transform: translateX(-300%) perspective(70em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(2)
+{
+    z-index: 2;
+    transform: translateX(-300%) perspective(60em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(3)
+{
+    z-index: 3;
+    transform: translateX(-300%) perspective(50em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(4)
+{
+    z-index: 4;
+    transform: translateX(-300%) perspective(40em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(5)
+{
+    z-index: 5;
+    transform: translateX(-300%) perspective(30em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(6)
+{
+    z-index: 6;
+    transform: translateX(-300%) perspective(20em) rotateY(60deg);
+}
+
+input.a7:checked ~ article:nth-of-type(7)
+{
+    z-index: 7;
+    transform: translateX(-300%);
 }
